@@ -8,7 +8,7 @@ const products = [
     description: 'Armadio in legno massello, dallo stile classico con eleganti pannellature sagomate e dettagli intagliati. La finitura calda mette in risalto le venature naturali del legno, rendendolo un complemento d\'arredo raffinato e senza tempo, perfetto per camera da letto o ingresso.',
     category: 'Armadi',
     price: '€ 2.500,00',
-    gallery: ['/images/Armadio-Classico-Francese.jpg'],
+    gallery: ['/images/Armadio-Classico-Francese.jpg.webp'],
     specifications: {
       altezza: '207 cm',
       larghezza: '156 cm',
@@ -1038,7 +1038,7 @@ const Products = forwardRef<HTMLDivElement, ProductsProps>(({ selectedCategory }
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 sm:px-0">
           {filteredProducts.map((product, index) => (
             <div
               key={index}
@@ -1054,7 +1054,7 @@ const Products = forwardRef<HTMLDivElement, ProductsProps>(({ selectedCategory }
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1">
-                <h3 className="text-lg sm:text-xl font-serif text-amber-100 group-hover:text-amber-400 transition-colors duration-300">
+                <h3 className="text-lg sm:text-xl font-serif text-amber-100 group-hover:text-amber-400 duration-300 text-center sm:text-left">
                   {product.name}
                 </h3>
                 {product.price && (
